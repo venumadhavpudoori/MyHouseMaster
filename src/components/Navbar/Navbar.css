@@ -1,0 +1,15 @@
+#color-nav{
+  background-color:#ffffff;
+}
+#basic-nav{
+  float: left;
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight:700;
+  color:#000000;
+  padding:12px 20px;
+  margin:0 5px;
+}
+#basic-nav:hover {
+  color:#125699;
+}

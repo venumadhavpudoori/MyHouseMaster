@@ -1,0 +1,28 @@
+#Team{
+    background-color:#F5F5F5;
+}
+.Team-heading{
+    font-family:"Helvetica" ,sans-serif;
+    font-size:32px;
+    font-weight:700;
+    color:#333333;
+    text-align:center;
+    margin:80px;
+}
+.content {
+  display: flex;
+}
+
+.content img{
+  margin-right: 10px;
+  display: block;
+  width:75px;
+  height:75px;
+  border-radius:50%;
+}
+
+.content h5,
+.content p 
+{
+    margin-top:10px;
+}

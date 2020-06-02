@@ -1,0 +1,31 @@
+#contactUs{
+   background-color:#F5F5F5; 
+}
+.contact-heading{
+    font-family:'Varela Round',sans-serif;
+    font-size:30px;
+    font-weight:700;
+    color:#000000;
+    text-align:center;
+    margin:80px;
+    }
+.contact-column-headings{
+    font-family:'Varela Round',sans-serif;
+    font-size:22px;
+    font-weight:500;
+    color:#000000
+}
+.contact-links{
+    display:flex;
+    margin-bottom:20px;
+}
+.contact-links .fa{
+  margin-right: 30px;
+  display: block;
+}
+.contact-links p:nth-child(1){
+    margin-top:-5px;
+}
+.contact-links p:nth-child(2){
+    margin-top:-20px;
+}

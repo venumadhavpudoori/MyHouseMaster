@@ -1,0 +1,39 @@
+#services{
+    background-color:#F5F5F5;
+}
+.section-heading {
+    font-family:"Helvetica" ,sans-serif;
+    font-size:32px;
+    font-weight:700;
+    color:#333333;
+    text-align:center;
+    margin:80px;
+     
+}
+#product-intro{
+	padding-bottom: 3.125rem;
+    vertical-align:middle;
+}
+.row{
+    display:flex;
+    align-items: center;
+}
+.section-title{
+    font-family:"Helvetica" ,sans-serif;
+    font-size:19px;
+    font-weight:700;
+    color:#333333;
+}
+.text-container{
+    width:450px;
+}
+.text-container p{
+     font-family:"Helvetica" ,sans-serif;
+    font-size:16px;
+    font-weight:400;
+    color:#333333;
+}
+.image-container img{
+    width:500px;
+    height:300px;
+}
