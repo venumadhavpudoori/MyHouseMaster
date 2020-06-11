@@ -7,9 +7,7 @@ export default function UnauthenticatedRoute({ component: C, appProps, ...rest }
         {...rest}
         render={props =>
         appProps.isAuthenticated
-          ? <Redirect
-              to={`/plan-with-fincyan`}
-            />
+          ? <C {...props} {...appProps} />
           :<C {...props} {...appProps} />
         }
     />

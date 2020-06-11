@@ -7,18 +7,17 @@ import SocialMedia from './SocialMedia';
 import Footer from './Footer';
 
 
-
 class Home extends Component {
     render() {
         return (
-            <div>
+            <>
              <Banner /> 
              <Services />
              <Team />
              <ContactUs />
              <SocialMedia />
              <Footer />
-            </div>
+            </>
         );
     }
 }

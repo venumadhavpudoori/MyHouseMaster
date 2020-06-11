@@ -1,16 +1,4 @@
-@media all and (min-width: 400px) {
-   ul{
-   display:flex;
-   justify-content: center;
-}
-ul li
-{
-    list-style:none;
-}
-  ul li a .fa{
-    font-size:12px;
-  }
-}
+
 .social-media{
     background-color:#F5F5F5;
  }

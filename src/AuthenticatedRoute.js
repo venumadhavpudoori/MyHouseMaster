@@ -13,7 +13,7 @@ export default function AuthenticatedRoute({ component: C, appProps, ...rest }) 
         appProps.isAuthenticated
           ? <C {...props} {...appProps} />
           : <Redirect
-              to={`/login-page`}
+              to={`/login`}
             />}
     />
 

@@ -1,13 +1,46 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Amplify , { Auth }  from 'aws-amplify';
+import AWSConfig from './AWSConfig';
+
+/* run the folowing commands at the command prompt
+amplify add auth
+amplify push
+npm add aws-amplify 
+*/
+
+Amplify.configure({
+  Auth: {
+    mandatorySignIn: true,
+    region: AWSConfig.cognito.REGION,
+    userPoolId: AWSConfig.cognito.USER_POOL_ID,
+    identityPoolId: AWSConfig.cognito.IDENTITY_POOL_ID,
+    userPoolWebClientId: AWSConfig.cognito.APP_CLIENT_ID
+  }
+  // Storage: {
+  //   region: AWSConfig.s3.REGION,
+  //   bucket: AWSConfig.s3.BUCKET,
+  //   identityPoolId: AWSConfig.cognito.IDENTITY_POOL_ID
+  // },
+  // API: {
+  //   endpoints: [
+  //     {
+  //       name: "notes",
+  //       endpoint: AWSConfig.apiGateway.URL,
+  //       region: AWSConfig.apiGateway.REGION
+  //     },
+  //   ]
+  // }
+});
 
 ReactDOM.render(
-  <React.StrictMode>
+ <Router>
     <App />
-  </React.StrictMode>,
+  </Router>,
   document.getElementById('root')
 );
 
